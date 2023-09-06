@@ -1,0 +1,26 @@
+// Base
+@import './reset';
+@import './variables';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 1rem;
+  color: $white;
+  background-color: $dark;
+}
+
+a {
+  color: $white;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $accent;
+  }
+}
