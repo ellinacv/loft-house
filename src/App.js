@@ -1,8 +1,10 @@
+import { Header } from './components/Header/Header';
+import { Intro } from './components/Intro/Intro';
 import './styles/main.scss';
 
 export const App = () => (
-  <div>
-    Loft House <br />
-    <a href="!#">Link</a>
-  </div>
+  <>
+    <Header />
+    <Intro />
+  </>
 );
