@@ -28,6 +28,7 @@ export const Header = () => {
               Contacts
             </a>
           </nav>
+          <div className={s.nav_btn}>Btn</div>
         </div>
       </div>
     </header>

@@ -1,8 +1,10 @@
+@import '../../styles/breakponts';
+
 .wrap {
-  // position: absolute;
+  position: absolute;
   width: 100%;
-  // left: 0;
-  // top: 0;
+  left: 0;
+  top: 0;
   z-index: 1;
 }
 
@@ -11,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 3rem;
+  gap: 3rem;
 }
 
 .nav {
@@ -20,4 +22,23 @@
   align-items: center;
   font-size: 0.875rem;
   letter-spacing: 0.7px;
+
+  &_btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .nav {
+    display: none;
+    &_btn {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .logo {
+    width: 6.25rem;
+  }
 }

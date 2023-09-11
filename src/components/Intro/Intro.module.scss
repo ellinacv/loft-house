@@ -1,8 +1,7 @@
+@import '../../styles/breakponts';
+
 .wrap {
   width: 100%;
-  max-width: 1920px;
-  // height: 100vh;
-  max-height: 840px;
   margin: 0 auto;
   padding: 14rem 1rem 4.5rem;
 
@@ -10,6 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 5rem;
 
   background: linear-gradient(
       180deg,
@@ -21,7 +21,6 @@
 }
 
 .title {
-  margin-bottom: 5rem;
   max-width: 34.5rem;
   text-align: center;
   font-size: 3rem;
@@ -30,23 +29,72 @@
   color: var(--accent);
 }
 
-.link {
-  margin-bottom: 5rem;
-}
-
 .contacts {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 5rem;
+  gap: 5rem;
 }
 
 .item {
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  gap: 1rem;
 
   a {
     font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .wrap {
+    padding: 8rem 2rem;
+    gap: 4rem;
+  }
+
+  .title {
+    max-width: 26rem;
+    margin-top: 8rem;
+    font-size: 2.5rem;
+  }
+
+  .link {
+    margin-bottom: 1rem;
+    & img {
+      width: 30px;
+    }
+  }
+
+  .contacts {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .wrap {
+    padding: 8rem 0;
+    gap: 1.5rem;
+  }
+
+  .title {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .link {
+    & img {
+      width: 20px;
+    }
+  }
+
+  .contacts {
+    gap: 0.5rem;
+  }
+
+  .item {
+    & a {
+      font-size: 0.8rem;
+    }
   }
 }
