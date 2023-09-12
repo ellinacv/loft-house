@@ -28,7 +28,11 @@ export const Header = () => {
               Contacts
             </a>
           </nav>
-          <div className={s.nav_btn}>Btn</div>
+          <button className={`${s.nav__btn} ${s.menu} ${s.active}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>

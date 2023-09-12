@@ -23,15 +23,62 @@
   font-size: 0.875rem;
   letter-spacing: 0.7px;
 
-  &_btn {
+  &__btn {
     display: none;
+  }
+}
+
+.menu {
+  position: relative;
+  width: 40px;
+  height: 20px;
+
+  & span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: var(--white);
+
+    transition: transform 0.3s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+
+  &.active {
+    span {
+      &:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      &:nth-child(2) {
+        transform: scale(0);
+      }
+      &:nth-child(3) {
+        bottom: 50%;
+        transform: translate(-50%, 50%) rotate(45deg);
+      }
+    }
   }
 }
 
 @media screen and (max-width: $tablet) {
   .nav {
     display: none;
-    &_btn {
+    &__btn {
       display: block;
     }
   }
