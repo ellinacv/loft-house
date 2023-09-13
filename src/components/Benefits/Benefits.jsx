@@ -13,7 +13,9 @@ export const Benefits = () => {
         <h2 className="visually-hidden">Benefits of the residential complex</h2>
         <div className={s.row}>
           <div className={s.item}>
-            <img className={s.item__img} src={bench} alt="Bench" />
+            <div className={s.item__img}>
+              <img src={bench} alt="Bench" />
+            </div>
             <p className={s.item__title}>Nearby historical parks and squares</p>
           </div>
           <div className={s.item}>
