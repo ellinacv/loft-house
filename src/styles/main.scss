@@ -1,6 +1,7 @@
 // Base
 @import './reset';
 @import './variables';
+@import './breakponts';
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
@@ -45,6 +46,10 @@ a {
   font-size: 2.25rem;
   font-weight: 700;
   color: var(--accent);
+
+  @media screen and (max-width: $tablet) {
+    font-size: 1.5rem;
+  }
 }
 
 .visually-hidden {

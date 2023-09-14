@@ -1,0 +1,62 @@
+@import '../../styles/breakponts';
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10rem 0;
+
+  background: linear-gradient(
+      180deg,
+      var(--dark) 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      var(--dark) 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%),
+    url('../../img/form/bg-form.jpg'), 50% 50% / cover no-repeat, #c4c4c4;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.75rem;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.descr {
+  font-size: 0.875rem;
+  line-height: 1.23;
+  color: var(--muted);
+}
+
+.formClaim {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: $tablet) {
+  .wrap {
+    padding: 4rem 0;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .formClaim {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+}
