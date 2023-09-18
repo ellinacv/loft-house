@@ -1,13 +1,13 @@
 import React from 'react';
 
-import s from './Form.module.scss';
+import s from './FormClaim.module.scss';
 import '../../styles/_form.scss';
 
 export const FormClaim = () => {
   return (
     <section className={s.wrap}>
       <div className="container">
-        <h2 className={`${s.title} title-2`}>Would you like to see?</h2>
+        <h2 className={`${s.title} title-2`}>Would you like to see it?</h2>
         <div className={s.content}>
           <p className={s.text}>
             LoftHouse residential complex is a business class project located in
@@ -18,7 +18,7 @@ export const FormClaim = () => {
           <div className={`form ${s.formClaim}`}>
             <input type="text" className="form__input" placeholder="Name" />
             <input type="text" className="form__input" placeholder="Namber" />
-            <p className={s.descr}>
+            <p className="privacy">
               *We don`t share your data with anyone. And we don`t save your
               number in the database.
             </p>

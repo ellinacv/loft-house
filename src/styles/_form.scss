@@ -1,3 +1,5 @@
+@import './breakponts';
+
 .form {
   // width: 100%;
   text-align: center;
@@ -31,5 +33,11 @@
     &:hover {
       background-color: saturate(#d4c17f, 15%);
     }
+  }
+
+  .privacy {
+    font-size: 0.875rem;
+    line-height: 1.23;
+    color: var(--muted);
   }
 }

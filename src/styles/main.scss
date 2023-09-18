@@ -52,6 +52,15 @@ a {
   }
 }
 
+.nav__link {
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 2rem;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
