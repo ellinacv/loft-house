@@ -20,8 +20,6 @@
   display: flex;
   column-gap: 2.5rem;
   align-items: center;
-  font-size: 0.875rem;
-  letter-spacing: 0.7px;
 
   &__btn {
     display: none;
@@ -96,7 +94,7 @@
         flex-direction: column;
         gap: 3rem;
 
-        font-size: 2rem;
+        // font-size: 2rem;
       }
 
       & .menu {
