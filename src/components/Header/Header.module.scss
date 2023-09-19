@@ -93,8 +93,6 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-
-        // font-size: 2rem;
       }
 
       & .menu {
@@ -107,14 +105,13 @@
 
   .nav {
     display: none;
+    a {
+      @media screen and (max-width: $tablet) {
+        font-size: 2rem;
+      }
+    }
     &__btn {
       display: block;
     }
   }
 }
-
-// @media screen and (max-width: $mobile) {
-//   .logo {
-//     width: 6.25rem;
-//   }
-// }
