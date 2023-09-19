@@ -1,21 +1,77 @@
+@import '../../styles/breakponts';
+
 .wrap {
   background-color: var(--footer-bg);
+  font-size: 0.875rem;
 }
 
 .content {
   padding: 3.75rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 30% 2fr 1fr;
+
   column-gap: 1rem;
 }
 
 .nav {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   column-gap: 1rem;
   &__col {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    margin-bottom: 1.5rem;
+    li {
+      letter-spacing: 0.7px;
+
+      a {
+        color: var(--accent);
+        transition: color 0.3s ease-in;
+      }
+
+      a:hover {
+        color: saturate(#d4c17f, 20%);
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .content {
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .contacts {
+    &__list {
+      display: none;
+    }
+
+    &__socials {
+      flex-wrap: wrap;
+    }
   }
 }

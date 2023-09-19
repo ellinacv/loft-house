@@ -3,6 +3,10 @@ import { Logo } from '../Logo/Logo';
 
 import s from './Footer.module.scss';
 
+import yt from '../../img/socials/youtube.svg';
+import fb from '../../img/socials/facebook.svg';
+import inst from '../../img/socials/instagram.svg';
+
 export const Footer = () => {
   return (
     <footer className={s.wrap}>
@@ -52,10 +56,20 @@ export const Footer = () => {
               <li>Unnamed Road, Mayer, AZ 86333</li>
               <li>Tel: + 1 (602) 7209495</li>
               <li>Sales department: 10 a.m. to 8 p.m.</li>
-              <li>E-mail: sales@lofthouse.com</li>
+              <li>
+                E-mail: <a href="/!">sales@lofthouse.com</a>
+              </li>
             </ul>
             <div className={s.contacts__socials}>
-              <a href="/!">VK</a>
+              <a href="/!">
+                <img src={yt} alt="Youtube" />
+              </a>
+              <a href="/!">
+                <img src={fb} alt="Facebook" />
+              </a>
+              <a href="/!">
+                <img src={inst} alt="Instagram" />
+              </a>
             </div>
           </div>
         </div>
