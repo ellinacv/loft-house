@@ -5,7 +5,7 @@ import '../../styles/_form.scss';
 
 export const FormClaim = () => {
   return (
-    <section className={s.wrap}>
+    <section className={s.wrap} id="form">
       <div className="container">
         <h2 className={`${s.title} title-2`}>Would you like to see it?</h2>
         <div className={s.content}>

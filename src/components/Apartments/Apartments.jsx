@@ -32,7 +32,7 @@ const aparts = [
 
 export const Apartments = () => {
   return (
-    <section className={s.wrap}>
+    <section className={s.wrap} id="apartments">
       <div className="container">
         <h2 className={`${s.title} title-2`}>Our apartments</h2>
         <div className={s.cards}>

@@ -14,19 +14,19 @@ export const Header = () => {
             <Logo width="133" height="50" />
           </a>
           <nav className={s.nav}>
-            <a className="nav__link" href="/#">
+            <a className="nav__link" href="#about">
               About
             </a>
-            <a className="nav__link" href="/#">
+            <a className="nav__link" href="#district">
               District
             </a>
-            <a className="nav__link" href="/#">
+            <a className="nav__link" href="#apartments">
               Catalog
             </a>
-            <a className="nav__link" href="/#">
+            <a className="nav__link" href="#form">
               Credit
             </a>
-            <a className="nav__link" href="/#">
+            <a className="nav__link" href="#contacts">
               Contacts
             </a>
           </nav>

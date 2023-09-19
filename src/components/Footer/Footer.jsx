@@ -9,7 +9,7 @@ import inst from '../../img/socials/instagram.svg';
 
 export const Footer = () => {
   return (
-    <footer className={s.wrap}>
+    <footer className={s.wrap} id="contacts">
       <div className="container">
         <div className={s.content}>
           <div className={s.logo}>
