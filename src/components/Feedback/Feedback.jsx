@@ -13,7 +13,7 @@ export const Feedback = () => {
             in the database.
           </p>
           <input type="text" className="form__input" placeholder="Name" />
-          <input type="text" className="form__input" placeholder="Namber" />
+          <input type="text" className="form__input" placeholder="Number" />
           <button type="submit" className="form__btn">
             View area
           </button>

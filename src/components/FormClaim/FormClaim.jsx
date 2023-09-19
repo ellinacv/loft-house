@@ -17,7 +17,7 @@ export const FormClaim = () => {
           </p>
           <div className={`form ${s.formClaim}`}>
             <input type="text" className="form__input" placeholder="Name" />
-            <input type="text" className="form__input" placeholder="Namber" />
+            <input type="text" className="form__input" placeholder="Number" />
             <p className="privacy">
               *We don`t share your data with anyone. And we don`t save your
               number in the database.
