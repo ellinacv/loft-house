@@ -3,7 +3,7 @@ import { Intro } from './components/Intro/Intro';
 import { Benefits } from './components/Benefits/Benefits';
 import { Apartments } from './components/Apartments/Apartments';
 import { FormClaim } from './components/FormClaim/FormClaim';
-import { Map } from './components/Map/Map';
+import { Location } from './components/Location/Location';
 import { Feedback } from './components/Feedback/Feedback';
 import { Footer } from './components/Footer/Footer';
 
@@ -16,7 +16,7 @@ export const App = () => (
     <Benefits />
     <Apartments />
     <FormClaim />
-    <Map />
+    <Location />
     <Feedback />
     <Footer />
   </>
