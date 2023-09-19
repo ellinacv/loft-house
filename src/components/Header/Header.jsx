@@ -3,6 +3,14 @@ import { Logo } from '../Logo/Logo';
 
 import s from './Header.module.scss';
 
+const nav = [
+  { title: 'About', href: '#about' },
+  { title: 'District', href: '#district' },
+  { title: 'Catalog', href: '#apartments' },
+  { title: 'Credit', href: '#form' },
+  { title: 'Contacts', href: '#contacts' },
+];
+
 export const Header = () => {
   const [showNav, setShowNav] = useState(false);
 
@@ -10,25 +18,19 @@ export const Header = () => {
     <header className={s.wrap}>
       <div className="container">
         <div className={`${s.row} ${showNav ? s.active : ''}`}>
-          <a href="/#" className={s.logo}>
+          <a href="/#" className={s.logo} onClick={() => setShowNav(false)}>
             <Logo width="133" height="50" />
           </a>
           <nav className={s.nav}>
-            <a className="nav__link" href="#about">
-              About
-            </a>
-            <a className="nav__link" href="#district">
-              District
-            </a>
-            <a className="nav__link" href="#apartments">
-              Catalog
-            </a>
-            <a className="nav__link" href="#form">
-              Credit
-            </a>
-            <a className="nav__link" href="#contacts">
-              Contacts
-            </a>
+            {nav.map((l) => (
+              <a
+                className="nav__link"
+                href={l.href}
+                onClick={() => setShowNav(false)}
+              >
+                {l.title}
+              </a>
+            ))}
           </nav>
           <button
             className={`${s.nav__btn} ${s.menu} ${showNav ? s.active : ''}`}

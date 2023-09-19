@@ -9,7 +9,7 @@ export const Intro = () => {
   return (
     <section className={s.wrap} id="about">
       <h1 className={s.title}>Residential complex in the historical center</h1>
-      <a href="/#" className={s.link}>
+      <a href="#apartments" className={s.link}>
         <img src={mouse} alt="Mouse" />
       </a>
       <div className={s.contacts}>
