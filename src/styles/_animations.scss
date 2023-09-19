@@ -1,0 +1,17 @@
+@keyframes moveToBottom {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(70%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  &_toBottom {
+    animation: moveToBottom 2s infinite ease;
+  }
+}

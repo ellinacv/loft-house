@@ -10,7 +10,7 @@ export const Intro = () => {
     <section className={s.wrap} id="about">
       <h1 className={s.title}>Residential complex in the historical center</h1>
       <a href="#apartments" className={s.link}>
-        <img src={mouse} alt="Mouse" />
+        <img src={mouse} alt="Mouse" className="animated_toBottom" />
       </a>
       <div className={s.contacts}>
         <div className={s.item}>
