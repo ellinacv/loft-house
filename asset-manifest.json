@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/loft-house/static/css/main.a59a069a.css",
-    "main.js": "/loft-house/static/js/main.2ff79f17.js",
+    "main.js": "/loft-house/static/js/main.28e9cf2c.js",
     "static/media/bg-form.jpg": "/loft-house/static/media/bg-form.5d415384ede1c4fa45cd.jpg",
     "static/media/02.jpg": "/loft-house/static/media/02.0ee9e0c7180bb6d08e04.jpg",
     "static/media/03.jpg": "/loft-house/static/media/03.64da2b3060d506ba8496.jpg",
@@ -20,10 +20,10 @@
     "index.html": "/loft-house/index.html",
     "static/media/youtube.svg": "/loft-house/static/media/youtube.1e93f1539842688e425c95cdc4e13244.svg",
     "main.a59a069a.css.map": "/loft-house/static/css/main.a59a069a.css.map",
-    "main.2ff79f17.js.map": "/loft-house/static/js/main.2ff79f17.js.map"
+    "main.28e9cf2c.js.map": "/loft-house/static/js/main.28e9cf2c.js.map"
   },
   "entrypoints": [
     "static/css/main.a59a069a.css",
-    "static/js/main.2ff79f17.js"
+    "static/js/main.28e9cf2c.js"
   ]
 }
