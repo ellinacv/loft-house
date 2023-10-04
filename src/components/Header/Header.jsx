@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
+import { useScrollLock } from '../../hooks/useScrollLock';
+
 import { Logo } from '../Logo/Logo';
 
 import s from './Header.module.scss';
@@ -14,6 +17,16 @@ const nav = [
 export const Header = () => {
   const [showNav, setShowNav] = useState(false);
 
+  const [lockScroll, unlockScroll] = useScrollLock();
+
+  useEffect(() => {
+    if (showNav) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
+  }, [showNav, lockScroll, unlockScroll]);
+
   return (
     <header className={s.wrap}>
       <div className="container">
@@ -24,6 +37,7 @@ export const Header = () => {
           <nav className={s.nav}>
             {nav.map((l) => (
               <a
+                key={l.href}
                 className="nav__link"
                 href={l.href}
                 onClick={() => setShowNav(false)}
